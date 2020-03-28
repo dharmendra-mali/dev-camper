@@ -1,0 +1,22 @@
+<div class="card mb-3" *ngFor ="let bootcamp of bootcampes">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="../../../public/image_1.jpg" class="card-img"  />
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a routerLink="/bootcamp/{{bootcamp._id}}"
+                            >{{bootcamp.name}}
+                            <span class="float-right badge badge-success"
+                                >{{bootcamp.averageRating}}</span
+                            ></a
+                        >
+                    </h5>
+                    <span class="badge badge-dark mb-2">{{bootcamp.address}}</span>
+                    <p class="card-text">
+                        {{bootcamp.careers}}                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
