@@ -57,7 +57,7 @@ export class BootcampDetailComponent implements OnInit, OnDestroy {
 
     this.bootcampesSub.unsubscribe()
     this.courses = []
-    this.bootcampeService.destroy()
+   
   }
 
 

@@ -1,63 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>DevCamper | Find a coding bootcamp</title>
-	</head>
-	<body>
-		  
-    <section class="bootcamp mt-5">
-       <div class="container">
-         <div class="row">
-					 <!-- Main col -->
-           <div class="col-md-8">
-						<h1>{{bootcampe.name}}</h1>
-						<!-- Description -->
-						<p>{{bootcampe.description}} </p>
-						<!-- Avg cost -->
-						<p class="lead mb-4">Average Course Cost: <span class="text-primary">${{bootcampe.averageCost}}</span></p>
-						<!-- Courses -->
-						<div class="card mb-3" *ngFor="let course of courses ">
-							<h5 class="card-header bg-primary text-white">{{course.title}}</h5>
-							<div class="card-body">
-								<h5 class="card-title">Duration: {{course.weeks}} Weeks</h5>
-								<p class="card-text">{{course.description}}</p>
-								<ul class="list-group mb-3">
-									<li class="list-group-item">Cost: ${{course.tuition}} USD</li>
-									<li class="list-group-item">Skill Required: {{course.minimumSkill}}</li>
-									<li class="list-group-item">Scholarship Available: <i class="fas fa-check text-success" aria-hidden="false"></i> </li>
-								</ul>
-							</div>
-						</div>
+<section class="bootcamp mt-5">
+	<div class="container">
+		<div class="row">
+			<!-- Main col -->
+			<div class="col-md-8">
+				<h1>{{bootcampe.name}}</h1>
+				<!-- Description -->
+				<p>{{bootcampe.description}} </p>
+				<!-- Avg cost -->
+				<p class="lead mb-4">Average Course Cost: <span class="text-primary">${{bootcampe.averageCost}}</span></p>
+				<!-- Courses -->
+				<div class="card mb-3" *ngFor="let course of courses ">
+					<h5 class="card-header bg-primary text-white">{{course.title}}</h5>
+					<div class="card-body">
+						<h5 class="card-title">Duration: {{course.weeks}} Weeks</h5>
+						<p class="card-text">{{course.description}}</p>
+						<ul class="list-group mb-3">
+							<li class="list-group-item">Cost: ${{course.tuition}} USD</li>
+							<li class="list-group-item">Skill Required: {{course.minimumSkill}}</li>
+							<li class="list-group-item">Scholarship Available: <i class="fas fa-check text-success"
+									aria-hidden="false"></i> </li>
+						</ul>
+					</div>
+				</div>
 
-						
-					 </div>
-					 <!-- Sidebar -->
-           <div class="col-md-4">
-						 <!-- Image -->
-						 <img src="/src/public/image_1.jpg" class="img-thumbnail" alt="...">
-						 <!-- Rating -->
-						 <h1 class="text-center my-4"><span class="badge badge-secondary badge-success rounded-circle p-3">{{bootcampe.averageRating}}</span> Rating</h1>
-						 <!-- Buttons -->
-						 <a href="" class="btn btn-dark btn-block my-3"><i class="fas fa-comments"></i>  Read Reviews</a>
-						 <a href="" class="btn btn-light btn-block my-3"><i class="fas fa-pencil-alt"></i>  Write a Review</a>
-						 <a href="#" target="_blank" class="btn btn-secondary btn-block my-3"><i class="fas fa-globe"></i>  Visit Website</a>
-						 <!-- Map -->
-						 <div id='map' style='width: 100%; height: 300px;'></div>
-						 <!-- Perks -->
-             <ul class="list-group list-group-flush" class="mt-4">
-               <li class="list-group-item"><i class="fas fa-check text-success"></i> Housing</li>
-                <li class="list-group-item"><i class="fas fa-check text-danger"></i> Job Assistance</li>
-                <li class="list-group-item"><i class="fas fa-times text-success"></i> Job Guarantee</li>
-                <li class="list-group-item"><i class="fas fa-check text-success"></i> Accepts GI Bill</li>
-              </ul>
-           </div>
-         </div>
-       </div>
-    </section>
 
-   
-	</body>
-</html>
+			</div>
+			<!-- Sidebar -->
+			<div class="col-md-4">
+				<!-- Image -->
+				<img
+					src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTkAvQxHY1em9E91F_wS45tMs5Z7Ujh3Q5YCGIbZ50cAXua1BW&usqp=CAU"
+					class="img-thumbnail" alt="...">
+				<!-- Rating -->
+				<h1 class="text-center my-4"><span
+						class="badge badge-secondary badge-success rounded-circle p-3">{{bootcampe.averageRating}}</span> Rating
+				</h1>
+				<!-- Buttons -->
+				<a href="" class="btn btn-dark btn-block my-3"><i class="fas fa-comments"></i> Read Reviews</a>
+				<a href="" class="btn btn-light btn-block my-3"><i class="fas fa-pencil-alt"></i> Write a Review</a>
+				<a href="#" target="_blank" class="btn btn-secondary btn-block my-3"><i class="fas fa-globe"></i> Visit
+					Website</a>
+				<!-- Map -->
+				<div id='map' style='width: 100%; height: 300px;'></div>
+				<!-- Perks -->
+				<ul class="list-group list-group-flush" class="mt-4">
+					<li class="list-group-item"><i class="fas fa-check text-success"></i> Housing</li>
+					<li class="list-group-item"><i class="fas fa-check text-danger"></i> Job Assistance</li>
+					<li class="list-group-item"><i class="fas fa-times text-success"></i> Job Guarantee</li>
+					<li class="list-group-item"><i class="fas fa-check text-success"></i> Accepts GI Bill</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
